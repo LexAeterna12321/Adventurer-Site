@@ -7,4 +7,24 @@
             grid-template-columns: 1fr 1fr;
         }
     }
+
+    .service {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 2%;
+
+            &__column {
+                min-height: 50vh;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                align-content: space-around;
+
+                &__i {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
 }
