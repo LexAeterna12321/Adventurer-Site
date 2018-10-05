@@ -1,0 +1,10 @@
+// min-width:768px
+
+@media(min-width:768px) {
+    .about {
+
+        &__wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

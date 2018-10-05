@@ -5,6 +5,11 @@
         padding: 5%;
     }
 
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
     &__column {
         display: grid;
         justify-content: stretch;
@@ -72,6 +77,36 @@
             }
 
             // toggle img --end
+        }
+    }
+
+    &__progress {
+        padding: 5%;
+
+        &__item {
+            position: relative;
+            padding: 20px 0;
+            margin-bottom: 5%;
+
+            &__bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                box-shadow: inset 0 0 40px 2px rgba(0, 0, 0, .4);
+            }
+
+            &__txt {
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                width: 100%;
+                transform: translateY(-50%);
+                text-align: left;
+                color: #fff;
+            }
         }
     }
 }
