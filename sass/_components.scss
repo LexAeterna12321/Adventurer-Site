@@ -1,0 +1,19 @@
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 20px 5%;
+}
+
+.btn {
+    background-color: $main-color;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    opacity: .7;
+    transition: $trs-time;
+
+    &:hover {
+        opacity: 1;
+    }
+}
