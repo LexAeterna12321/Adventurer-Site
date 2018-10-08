@@ -56,4 +56,21 @@
             }
         }
     }
+
+    .reviews {
+        &__wrapper {
+
+            &__column {
+                margin: 0 10%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                align-items: center;
+                justify-content: center;
+
+                &__txt {
+                    text-align: left;
+                }
+            }
+        }
+    }
 }
