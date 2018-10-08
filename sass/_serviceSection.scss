@@ -1,5 +1,4 @@
 .service {
-    text-align: center;
 
     &__wrapper {
         display: grid;
@@ -7,7 +6,14 @@
         &__column {
             margin: 5%;
             padding: 5%;
+            border-radius: 5px;
             @include shadow;
+            transition: $trs-time;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: #fff;
+            }
 
             &__h2 {
                 margin: 5% 0;

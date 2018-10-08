@@ -27,4 +27,33 @@
             }
         }
     }
+
+    .offer {
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            &__column {
+                display: flex;
+                align-items: flex-start;
+                text-align: left;
+
+                &__icon {
+                    text-align: center;
+                    width: 100px;
+                    height: 100px;
+                    line-height: 100px;
+                }
+
+                &__txt {
+                    padding-left: 5%;
+
+                    &__h2 {
+                        padding-top: 0;
+                    }
+                }
+
+            }
+        }
+    }
 }

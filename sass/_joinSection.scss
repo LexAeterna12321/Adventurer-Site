@@ -1,0 +1,23 @@
+.join {
+    padding: 10% 0;
+    background-image: url("../img/joinbg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+
+    &__icon {
+        font-size: 6rem;
+        color: $main-color;
+        padding: 0 0 4% 0;
+    }
+
+    &__p {
+        padding: 5%;
+        line-height: 1.4;
+        font-size: 1.6rem;
+    }
+}
