@@ -113,6 +113,39 @@
 
         }
     }
+
+    .works {
+
+        &__wrapper {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 5%;
+        }
+    }
+
+    .footer {
+        &__subscribe {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            text-align: right;
+
+            &__p {
+                margin-right: 5%;
+            }
+        }
+
+        &__main {
+            background-color: #151515;
+            color: #ccc;
+
+            &__wrapper {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                padding: 5%;
+                grid-gap: 5%;
+            }
+        }
+    }
+
 }
 
 @media(min-width:1080px) {

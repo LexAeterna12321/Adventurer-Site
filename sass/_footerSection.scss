@@ -1,0 +1,117 @@
+.footer {
+    &__subscribe {
+        padding: 2% 0;
+        background-color: #312b2b;
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+
+        &__p {
+            font-size: 1.4rem;
+            padding: 2% 0;
+        }
+
+        &__input {
+            display: flex;
+
+            & input,
+            &__icon {
+                padding: 15px 25px;
+                border: none;
+                display: block;
+                font-size: 1.3rem;
+            }
+
+            & input {
+                border-top-left-radius: $border-radius;
+                border-bottom-left-radius: $border-radius;
+            }
+
+            &__icon {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                line-height: 30px;
+            }
+        }
+    }
+
+    &__main {
+        background-color: #151515;
+        color: #ccc;
+        font-size: 1.4rem;
+
+        &__wrapper {
+            display: grid;
+            padding: 10%;
+            text-align: left;
+            justify-content: center;
+
+            &__column {
+                display: flex;
+                flex-direction: column;
+
+                &__p {
+                    padding: 3% 0;
+                }
+
+                &__container {
+                    display: grid;
+                    grid-template-columns: 5% 80%;
+                    justify-items: center;
+                    align-items: center;
+
+                    &__i,
+                    &__p {
+                        padding: 5% 0;
+                    }
+                }
+
+                &__h2 {
+                    padding: 4% 0;
+                    color: $main-color;
+                }
+
+                &__images {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    &__img {
+                        padding: 1%;
+                        flex-basis: 20%;
+                        justify-content: space-around;
+                    }
+                }
+            }
+
+            &__column:nth-child(2) {
+                & i {
+                    color: $main-color;
+                }
+
+                & p {
+                    width: 80%;
+                    display: inline-block;
+                    padding-right: 5%;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+
+        padding: 3% 0;
+        text-align: center;
+        background-color: #151515;
+        border-top: 2px solid #312b2b;
+
+        &__h2 {
+            color: #fff;
+
+            &__span {
+                color: $main-color;
+
+            }
+        }
+    }
+}

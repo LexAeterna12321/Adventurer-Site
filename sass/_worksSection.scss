@@ -1,0 +1,59 @@
+.works {
+    &__p {
+        font-size: 1.6rem;
+        padding-bottom: 3%;
+    }
+
+    &__button {
+        margin: 2vh 1vh;
+        background-color: transparent;
+        color: #000;
+        box-shadow: none;
+        font-size: 1.8rem;
+        transform-origin: center center;
+
+        &:hover {
+            color: $main-color;
+            letter-spacing: 2px;
+        }
+    }
+
+    &__wrapper {
+        display: grid;
+        margin: 5%;
+
+        &__column {
+
+            &__img {
+                margin-top: 6%;
+                cursor: pointer;
+
+                & img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+
+            &__h2 {
+                padding: 3% 0;
+            }
+
+            &__h6 {
+                font-size: 1.3rem;
+                color: rgba(0, 0, 0, .4);
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 3% 0;
+        flex-wrap: wrap;
+
+        &__img {
+            padding: 5% 0;
+        }
+    }
+
+}
