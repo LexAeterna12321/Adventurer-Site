@@ -1,5 +1,3 @@
-// min-width:768px
-
 @media(min-width:768px) {
     .about {
 
@@ -63,14 +61,62 @@
             &__column {
                 margin: 0 10%;
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr 4fr;
                 align-items: center;
                 justify-content: center;
 
+                &__img {
+                    width: 80%;
+                    margin: 0;
+                }
+
                 &__txt {
+                    margin: 0 5%;
                     text-align: left;
                 }
             }
         }
+    }
+
+    .achievements {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 7%;
+        grid-gap: 2%;
+
+        &__column {
+            width: 95%;
+            margin: 5% auto;
+            padding: 15% 5%;
+        }
+    }
+
+    .team {
+        &__p {
+            padding: 5% 5% 8% 5%;
+            font-size: 1.8rem;
+        }
+
+        &__wrapper {
+            display: grid;
+            justify-content: center;
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 2%;
+            margin: 0 2%;
+            font-size: 3rem;
+
+            &__column {
+                &__layer {
+                    font-size: 2rem;
+                }
+            }
+
+        }
+    }
+}
+
+@media(min-width:1080px) {
+    html {
+        font-size: 14px;
     }
 }

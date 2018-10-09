@@ -2,31 +2,39 @@
     height: 100vh;
     width: 100%;
     display: grid;
-    grid-template-rows: 2fr 10fr;
+    grid-template-rows: 2fr 14fr;
 
     &__nav {
         display: grid;
-        grid-template-columns: 4fr 10fr;
+        grid-template-columns: 3fr 10fr;
         align-content: center;
         justify-content: space-between;
 
         &__logo {
+            align-self: center;
+            margin-left: 20%;
+
+
             & img {
                 display: block;
                 width: 100%;
-                margin-left: 20%;
             }
         }
 
         &__menu-icon {
             text-align: right;
             margin-right: 10%;
-            font-size: 1.5rem;
+            font-size: 3rem;
+
+            & i {
+                cursor: pointer;
+            }
+
         }
     }
 
     &__main {
-        height: 80vh;
+        height: 85vh;
         background: url("../img/homebenner.jpg");
         background-position: center;
         background-size: cover;

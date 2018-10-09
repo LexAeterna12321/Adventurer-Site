@@ -1,10 +1,17 @@
 .reviews {
     &__wrapper {
         &__column {
-            padding: 2% 5%;
+            padding: 2% 7%;
 
             &__img {
                 border-radius: 50%;
+                width: 40%;
+                margin: 0 auto;
+
+                & img {
+                    width: 100%;
+                    display: block;
+                }
             }
 
             &__txt {

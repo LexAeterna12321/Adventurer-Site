@@ -1,0 +1,28 @@
+.achievements {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)), url("../img/counterbg.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    display: grid;
+
+    &__column {
+        width: 95%;
+        margin: 5% auto;
+        padding: 7% 0;
+        background-color: rgba(236, 72, 72, .6);
+        font-size: 2.4rem;
+        border-radius: $border-radius;
+
+        &__icon {
+            font-size: 3rem;
+        }
+
+        &__value {
+            padding: 2% 0;
+        }
+
+        &__h6 {
+            font-size: 2.7rem;
+        }
+    }
+}

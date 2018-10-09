@@ -9,14 +9,21 @@ h1 {
 .btn {
     background-color: $main-color;
     color: #fff;
-    padding: 5px 15px;
-    border: none;
+    padding: 1rem 1.8rem;
+
     opacity: .7;
     cursor: pointer;
     @include shadow;
+    border: none;
+    border-radius: $border-radius;
     transition: $trs-time;
 
     &:hover {
         opacity: 1;
     }
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
 }

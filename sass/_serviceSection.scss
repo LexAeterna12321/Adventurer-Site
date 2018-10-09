@@ -6,7 +6,7 @@
         &__column {
             margin: 5%;
             padding: 5%;
-            border-radius: 5px;
+            border-radius: $border-radius;
             @include shadow;
             transition: $trs-time;
 
@@ -21,9 +21,9 @@
                 text-transform: uppercase;
             }
 
-            &__i {
+            &__icon {
                 display: block;
-                font-size: 2rem;
+                font-size: 3rem;
 
                 &::before {
                     text-shadow: 2px 4px 1px rgba(0, 0, 0, .4);

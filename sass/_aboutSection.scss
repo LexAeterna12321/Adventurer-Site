@@ -16,6 +16,7 @@
         align-content: space-around;
         font-size: 1.4rem;
 
+
         &__section {
             position: relative;
             margin: 5%;
@@ -28,6 +29,7 @@
             color: #fff;
             transition: $trs-time;
             border: 1px solid rgba(0, 0, 0, .4);
+            border-radius: $border-radius;
             overflow: hidden;
 
             &:hover {
@@ -53,11 +55,11 @@
             }
 
             &--show .about__column__section__p--hidden {
-
-                padding: 10% 5% 25% 5%;
+                padding: 5% 5%;
+                transition: $trs-time;
+                height: 100px;
                 bottom: 0;
                 opacity: 1;
-
             }
 
             // toggle hidden p --end
