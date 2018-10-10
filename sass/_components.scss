@@ -21,6 +21,10 @@ h1 {
     &:hover {
         opacity: 1;
     }
+
+    &--ok {
+        background-color: rgb(4, 192, 167);
+    }
 }
 
 a {
