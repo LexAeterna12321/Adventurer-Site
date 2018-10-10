@@ -100,6 +100,7 @@
                 position: absolute;
                 background-color: $secondary-color;
                 transition: $trs-time;
+                border-radius: $border-radius;
             }
 
             &__bar {
@@ -120,7 +121,7 @@
                 top: 50%;
                 left: 5%;
                 white-space: nowrap;
-                width: 100%;
+                width: 80%;
                 font-size: 1.6rem;
                 transform: translateY(-50%);
                 text-align: left;

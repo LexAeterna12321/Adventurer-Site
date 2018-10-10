@@ -1,12 +1,11 @@
 .header {
-    height: 100vh;
-    width: 100%;
+
     display: grid;
     grid-template-rows: 2fr 14fr;
 
     &__nav {
         display: grid;
-        grid-template-columns: 3fr 10fr;
+        grid-template-columns: 1fr 3fr;
         align-content: center;
         justify-content: space-between;
 
@@ -42,9 +41,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        overflow: hidden;
 
         &__h1 {
-            font-size: 6rem;
+            font-size: 4rem;
         }
 
         &__h2 {

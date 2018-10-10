@@ -1,4 +1,14 @@
 @media(min-width:768px) {
+
+    .header {
+        &__main {
+
+            &__h1 {
+                font-size: 6rem;
+            }
+        }
+    }
+
     .about {
 
         &__wrapper {
