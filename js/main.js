@@ -1,4 +1,5 @@
 // about section toggle event
+
 const columns = document.querySelectorAll(".about__column__section");
 
 columns.forEach(column => {
@@ -6,7 +7,34 @@ columns.forEach(column => {
         column.classList.toggle("about__column__section--show");
     })
 })
-//
+
+// about section value counter
+
+const aboutBars = document.querySelectorAll(".about__progress__item__bar");
+const aboutPos = document.querySelector(".about").offsetTop;
+const aboutTxt = document.querySelectorAll(".about__progress__item__txt span")
+let flagAbout = true;
+
+window.addEventListener("scroll", () => {
+    let clientY = window.scrollY;
+
+    if (clientY >= aboutPos - 200 && flagAbout == true) {
+
+        for (let i = 0; i < aboutBars.length; i++) {
+            let baseNumber = 0;
+            const randNumber = Math.floor(Math.random() * 50 + 50);
+
+            setInterval(() => {
+                if (baseNumber < randNumber) {
+                    baseNumber += Math.floor(Math.random() + 1);
+                    aboutBars[i].style.width = `${baseNumber}%`;
+                    aboutTxt[i].textContent = `${baseNumber} %`;
+                    flagAbout = false;
+                }
+            }, 40)
+        }
+    }
+})
 
 // achievements section value counter 
 
@@ -33,7 +61,6 @@ window.addEventListener("scroll", () => {
         }
     }
 })
-//
 
 // subscription activation
 
@@ -43,35 +70,3 @@ subscribeBtn.addEventListener("click", () => {
     document.querySelector("#subInput").value = "";
     setTimeout(() => subscribeBtn.classList.remove("btn--ok"), 2000)
 });
-
-//
-
-
-
-
-// 
-const aboutBars = document.querySelectorAll(".about__progress__item__bar");
-const aboutPos = document.querySelector(".about").offsetTop;
-const aboutTxt = document.querySelectorAll(".about__progress__item__txt span")
-let flagAbout = true;
-
-window.addEventListener("scroll", () => {
-    let clientY = window.scrollY;
-
-    if (clientY >= aboutPos - 200 && flagAbout == true) {
-
-        for (let i = 0; i < aboutBars.length; i++) {
-            let baseNumber = 0;
-            const randNumber = Math.floor(Math.random() * 50 + 50);
-
-            setInterval(() => {
-                if (baseNumber < randNumber) {
-                    baseNumber += Math.floor(Math.random() + 1);
-                    aboutBars[i].style.width = `${baseNumber}%`;
-                    aboutTxt[i].textContent = `${baseNumber} %`;
-                    flagAbout = false;
-                }
-            }, 40)
-        }
-    }
-})

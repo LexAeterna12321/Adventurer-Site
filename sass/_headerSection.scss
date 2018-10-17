@@ -28,13 +28,12 @@
         }
 
         &__menu {
-            // display: grid;
             display: none; //toggle in mqs
-            grid-template-columns: repeat(6, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             grid-area: menu;
             align-items: center;
-            list-style: none;
 
+            list-style: none;
 
             &__item {
                 list-style: none;
