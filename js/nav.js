@@ -38,7 +38,7 @@ window.addEventListener("scroll", () => {
                 item.classList.add("header__nav__menu__item__link--active");
             }
         })
-    } else if (windowScroll >= aboutY && windowScroll <= serviceY) {
+    } else if (windowScroll >= aboutY && windowScroll < serviceY) {
 
         nav.forEach(item => {
             item.classList.remove("header__nav__menu__item__link--active");
@@ -46,7 +46,7 @@ window.addEventListener("scroll", () => {
                 item.classList.add("header__nav__menu__item__link--active");
             }
         })
-    } else if (windowScroll >= serviceY && windowScroll <= teamY) {
+    } else if (windowScroll >= serviceY && windowScroll < teamY) {
 
         nav.forEach(item => {
             item.classList.remove("header__nav__menu__item__link--active");
@@ -54,7 +54,7 @@ window.addEventListener("scroll", () => {
                 item.classList.add("header__nav__menu__item__link--active");
             }
         })
-    } else if (windowScroll >= teamY && windowScroll <= worksY) {
+    } else if (windowScroll >= teamY && windowScroll < worksY) {
 
         nav.forEach(item => {
             item.classList.remove("header__nav__menu__item__link--active");
