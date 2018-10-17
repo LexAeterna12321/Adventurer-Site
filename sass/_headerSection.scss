@@ -6,6 +6,7 @@
     &__nav {
         position: fixed;
         width: 100%;
+        height: 10vh;
         background: rgba(0, 0, 0, .6);
         padding: 2%;
         display: grid;
@@ -28,15 +29,26 @@
         }
 
         &__menu {
-            display: none; //toggle in mqs
-            grid-template-columns: repeat(5, 1fr);
-            grid-area: menu;
-            align-items: center;
-
+            // display: none; //toggle in mqs
+            position: fixed;
+            display: grid;
+            left: -100%;
+            top: 10vh;
+            padding: 5%;
+            grid-template-columns: 1fr;
+            background-color: rgba(0, 0, 0, .6);
+            border-bottom-right-radius: $border-radius;
             list-style: none;
+            transition: left $trs-time;
+
+            &--show {
+                left: 0;
+            }
 
             &__item {
                 list-style: none;
+                margin: 2% 0 2% 2%;
+                font-size: 2rem;
 
                 &__link {
                     display: block;

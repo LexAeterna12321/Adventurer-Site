@@ -165,7 +165,18 @@
 
         &__nav {
             &__menu {
-                display: grid;
+                position: relative;
+                grid-template-columns: repeat(5, 1fr);
+                grid-area: menu;
+                align-items: center;
+                background-color: transparent;
+                left: 0;
+                top: 0;
+
+                &__item {
+                    margin: 0;
+                    font-size: 1rem;
+                }
             }
 
             &__menu-icon {
