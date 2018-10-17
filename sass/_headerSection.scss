@@ -1,15 +1,23 @@
 .header {
 
     display: grid;
-    grid-template-rows: 2fr 14fr;
+    grid-template-rows: 14fr;
 
     &__nav {
+        position: fixed;
+        width: 100%;
+        background: rgba(0, 0, 0, .6);
+        padding: 2%;
         display: grid;
-        grid-template-columns: 1fr 3fr;
+        grid-template-columns: 1fr 1fr 2fr;
         align-content: center;
         justify-content: space-between;
+        z-index: 2;
+        grid-template-areas:
+            "logo . menu";
 
         &__logo {
+            grid-area: logo;
             align-self: center;
             margin-left: 20%;
 
@@ -19,10 +27,38 @@
             }
         }
 
+        &__menu {
+            // display: grid;
+            display: none; //toggle in mqs
+            grid-template-columns: repeat(6, 1fr);
+            grid-area: menu;
+            align-items: center;
+            list-style: none;
+
+
+            &__item {
+                list-style: none;
+
+                &__link {
+                    display: block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    color: #fff;
+                    text-align: center;
+
+                    &--active {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+
         &__menu-icon {
             text-align: right;
             margin-right: 10%;
             font-size: 3rem;
+            color: #fff;
+            grid-area: menu;
 
             & i {
                 cursor: pointer;
@@ -44,7 +80,7 @@
         overflow: hidden;
 
         &__h1 {
-            font-size: 4rem;
+            font-size: 3.6rem;
         }
 
         &__h2 {

@@ -1,14 +1,5 @@
 @media(min-width:768px) {
 
-    .header {
-        &__main {
-
-            &__h1 {
-                font-size: 6rem;
-            }
-        }
-    }
-
     .about {
 
         &__wrapper {
@@ -163,4 +154,26 @@
     html {
         font-size: 16px;
     }
+
+    .header {
+        &__main {
+
+            &__h1 {
+                font-size: 6rem;
+            }
+        }
+
+        &__nav {
+            &__menu {
+                display: grid;
+            }
+
+            &__menu-icon {
+                display: none;
+
+            }
+
+        }
+    }
+
 }
