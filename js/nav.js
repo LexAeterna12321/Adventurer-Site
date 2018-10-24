@@ -21,7 +21,6 @@ navBtn.addEventListener("click", () => {
 });
 
 // active section toggle
-const headerY = document.querySelector(".header").offsetTop;
 const aboutY = document.querySelector(".about").offsetTop;
 const serviceY = document.querySelector(".service").offsetTop;
 const teamY = document.querySelector(".team").offsetTop;
@@ -39,7 +38,7 @@ window.addEventListener("scroll", () => {
             }
         })
     } else if (windowScroll >= aboutY && windowScroll < serviceY) {
-
+        document.querySelector(".about").classList.add("show");
         nav.forEach(item => {
             item.classList.remove("header__nav__menu__item__link--active");
             if (item.dataset.text == "about") {
@@ -47,7 +46,7 @@ window.addEventListener("scroll", () => {
             }
         })
     } else if (windowScroll >= serviceY && windowScroll < teamY) {
-
+        document.querySelector(".service").classList.add("show");
         nav.forEach(item => {
             item.classList.remove("header__nav__menu__item__link--active");
             if (item.dataset.text == "service") {
@@ -55,7 +54,7 @@ window.addEventListener("scroll", () => {
             }
         })
     } else if (windowScroll >= teamY && windowScroll < worksY) {
-
+        document.querySelector(".team").classList.add("show");
         nav.forEach(item => {
             item.classList.remove("header__nav__menu__item__link--active");
             if (item.dataset.text == "team") {
@@ -63,7 +62,7 @@ window.addEventListener("scroll", () => {
             }
         })
     } else if (windowScroll >= worksY) {
-
+        document.querySelector(".works").classList.add("show");
         nav.forEach(item => {
             item.classList.remove("header__nav__menu__item__link--active");
             if (item.dataset.text == "portfolio") {
